@@ -10,6 +10,7 @@
     </head>
 
     <body>
+        @include('sweetalert::alert')
 
         <div class="container mt-5">
             <div class="row align-items-center justify-content-center">
@@ -18,7 +19,7 @@
                         <div class="card-body p-4 p-md-5">
                             <h3 class="text-center mb-5">Login - POS</h3>
 
-                            <form action="" method="post">
+                            <form action="{{ route('action-login') }}" method="post">
                                 @csrf
                                 <div class="mb-5">
                                     <label for="" class="form-label fw-semibold">Email</label>
